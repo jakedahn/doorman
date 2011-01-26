@@ -1,4 +1,6 @@
 Doorman::Application.routes.draw do
+  resources :pieces
+
   resources :items
 
   resources :sites

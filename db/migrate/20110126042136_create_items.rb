@@ -4,7 +4,8 @@ class CreateItems < ActiveRecord::Migration
       t.string :title
       t.boolean :visible
       t.datetime :date_completed
-
+      
+      t.integer :site_id
       t.timestamps
     end
   end

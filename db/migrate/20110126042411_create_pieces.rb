@@ -4,7 +4,9 @@ class CreatePieces < ActiveRecord::Migration
       t.string :type
       t.string :title
       t.text :body
-
+      t.boolean :visible
+      
+      t.integer :item_id
       t.timestamps
     end
   end

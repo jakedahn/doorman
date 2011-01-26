@@ -24,7 +24,7 @@ class PiecesController < ApplicationController
   # GET /pieces/new
   # GET /pieces/new.xml
   def new
-    @piece = Piece.new
+    @piece = Piece.new(params[:item_id])
 
     respond_to do |format|
       format.html # new.html.erb

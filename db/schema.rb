@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20110126042411) do
     t.string   "title"
     t.boolean  "visible"
     t.datetime "date_completed"
+    t.integer  "site_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -24,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20110126042411) do
     t.string   "type"
     t.string   "title"
     t.text     "body"
+    t.boolean  "visible"
+    t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

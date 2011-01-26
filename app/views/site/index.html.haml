@@ -1,3 +1,18 @@
 %h1 Portfolio Work
 
-- for project in @projects
+- for item in @items
+  %article{:id => item.title}
+    %h1= item.title
+    = link_to "Add Piece +", new_piece_path, :class => "add_btn"
+    
+    - for piece in item.pieces
+      %li{:class => piece.type}
+        %p= piece.title
+        %ul.list_actions
+          %li.delete
+            = link_to "Delete", "/foo"
+            = link_to "Visible", "/foo", :class => "visibility #{ piece.visible ? "visible" : "hidden" }"
+      
+  
+  
+  

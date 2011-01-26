@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Doorman</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+<html lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Doorman</title>
+    <%= stylesheet_link_tag "style" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", "application" %>
+  </head>
+  <body>
+    <div id="value_scale"></div>
+    <div id="wrapper">
+      <header>
+        <h1>Doorman</h1>
+        <nav>
+          <ul>
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="content_wrapper">
+        <div id="content">
+          <%= yield %>
+          <h1>Portfolio Work</h1>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright &copy; 2010 Jake Dahn &amp; HyperboleDesign</p>
+      </footer>
+    </div>
+    
+  </body>
 </html>

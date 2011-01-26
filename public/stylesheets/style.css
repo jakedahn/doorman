@@ -25,6 +25,7 @@ header {
 	border-radius: 5px;
 	float: ;
 }
+
 #wrapper {
 	width: 910px;
 	margin: 0 auto;
@@ -155,7 +156,7 @@ nav li.active a {
 
 article ul li {
 	background: #fff;
-	padding: 15px;
+	padding: 0 15px 20px 15px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -166,26 +167,30 @@ article ul li {
 }
 
 article ul li a {
+  float: left;
 	text-decoration: none;
+  margin-top: 17px;
+  display: block;
 	color: #333;
 	font-weight: bold;
 }
 
-article ul li ul.list_actions {
+article ul li .list_actions {
 	float: right;
-	margin-top: -15px;
 	height: 19px;
 	margin-right: -24px;
 }
 
-article ul li ul.list_actions li {
+article ul li .list_actions p {
 	padding: 0;
 	width: auto;
 	float: left;
 	border: 0;
+  margin-right: 19px;
+  margin-left: -5px;
 }
 
-article ul li ul.list_actions li a {
+article ul li .list_actions p a {
 	padding: 5px 8px;
 	display: block;
 	font-size: 10px;

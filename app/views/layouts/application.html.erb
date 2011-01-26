@@ -22,8 +22,8 @@
       <div id="content_wrapper">
         <div id="content">
           <%= yield %>
-          <h1>Portfolio Work</h1>
         </div>
+        <%= link_to "Add Item +", new_item_path, :class => "add_btn" %>
       </div>
       <footer>
         <p>Copyright &copy; 2010 Jake Dahn &amp; HyperboleDesign</p>

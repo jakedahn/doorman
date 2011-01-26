@@ -1,5 +1,5 @@
 Doorman::Application.routes.draw do
-  get "site/index"
+  get "site/index", :as => "site_index"
 
   resources :pieces
 

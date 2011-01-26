@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @item.title
+%p
+  %b Date completed:
+  = @item.date_completed
+
+= link_to 'Edit', edit_item_path(@item)
+\|
+= link_to 'Back', items_path
